@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theorem</title>
+    <link>https://example.com/math/theorem/index.html</link>
+    <description>左看右看每条定理都不简单</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://example.com/math/theorem/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

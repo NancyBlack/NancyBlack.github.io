@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags</title>
+    <link>https://example.com/tags/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag :: AHK</title>
+      <link>https://example.com/tags/ahk/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/ahk/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: C</title>
+      <link>https://example.com/tags/c/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/c/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: C&#43;&#43;</title>
+      <link>https://example.com/tags/c&#43;&#43;/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/c&#43;&#43;/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Food</title>
+      <link>https://example.com/tags/food/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/food/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: GPIO</title>
+      <link>https://example.com/tags/gpio/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/gpio/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Latex</title>
+      <link>https://example.com/tags/latex/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/latex/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Markdown</title>
+      <link>https://example.com/tags/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/markdown/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Math</title>
+      <link>https://example.com/tags/math/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/math/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Matlab</title>
+      <link>https://example.com/tags/matlab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/matlab/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Obsidian</title>
+      <link>https://example.com/tags/obsidian/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/obsidian/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Pid</title>
+      <link>https://example.com/tags/pid/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/pid/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: PMSM</title>
+      <link>https://example.com/tags/pmsm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/pmsm/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Simulink</title>
+      <link>https://example.com/tags/simulink/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/simulink/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: STM32</title>
+      <link>https://example.com/tags/stm32/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/stm32/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: VS</title>
+      <link>https://example.com/tags/vs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/vs/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: VsCode</title>
+      <link>https://example.com/tags/vscode/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/tags/vscode/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
