@@ -1,12 +1,12 @@
 +++
 title = "Technology"
 type = "chapter"
-description = ""
-categories = [""]
-tags = [""]
+description = "发工资先换把焊枪！"
+categories = ["Technology"]
 math = true
 weight = 1
-#date = 2024-12-25 15:52:19
 +++
 
-This is a new chapter.
+希望有天能手搓出一整套动力系统！干！
+
+{{% children containerstyle="div" style="h2" description=true %}}
