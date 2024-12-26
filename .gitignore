@@ -1,0 +1,9 @@
+/public
+
+.hugo_build.lock
+
+*.tmp 
+
+/.DS_Store
+
+/resources
