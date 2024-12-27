@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "矢量控制"
 description = "这个六边形哪都能见到"
 categories = ["Technology","Tutorials"]

@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "{{ replace .Name "-" " " | title }}"
 description = ""
 categories = [""]

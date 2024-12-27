@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "GPIO"
 description = "都是从这开始的吧"
 categories = ["Technology","Tutorials"]

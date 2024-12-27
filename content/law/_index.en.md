@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Law"
 type = "chapter"
 description = "生死看淡不服就干"

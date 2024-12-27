@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "BUG"
 description = "反正你总能遇到"
 categories = ["Technology","Tutorials"]

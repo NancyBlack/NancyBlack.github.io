@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "PMSM"
 description = "电机它转呀转不停"
 categories = ["Technology"]

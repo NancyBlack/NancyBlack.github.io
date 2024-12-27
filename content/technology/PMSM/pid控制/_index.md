@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Pid控制"
 description = "电机闭环啦"
 categories = ["Technology","Tutorials"]

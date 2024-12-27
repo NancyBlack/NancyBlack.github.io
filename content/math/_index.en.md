@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Math"
 type = "chapter"
 description = "一生二，二生三，三生万物"

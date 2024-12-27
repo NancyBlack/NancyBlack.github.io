@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "C"
 description = "单片机跑不掉的"
 categories = ["Programming"]

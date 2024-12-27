@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "History"
 description = "八卦谁不爱呢"
 categories = ["Math","History"]

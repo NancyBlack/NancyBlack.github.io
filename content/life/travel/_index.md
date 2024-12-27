@@ -2,7 +2,7 @@
 title = "Travel"
 description = "逛吃逛吃逛吃逛吃~"
 categories = ["Travel"]
-weight = 2
+weight = 4
 +++
 <p align="right">2024-12-26   20:54:00</p>
 

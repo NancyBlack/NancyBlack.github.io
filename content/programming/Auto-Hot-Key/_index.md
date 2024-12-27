@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Auto-Hot-Key"
 description = "接触的第二种脚本语言"
 categories = ["Programming"]

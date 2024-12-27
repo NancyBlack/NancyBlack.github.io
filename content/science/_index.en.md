@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Science"
 type = "chapter"
 description = "这个世界真奇秒"

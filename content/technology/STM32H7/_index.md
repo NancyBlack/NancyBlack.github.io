@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "STM32H7"
 description = "没有单片机电机怎么转"
 categories = ["Technology"]

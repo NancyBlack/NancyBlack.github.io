@@ -1,4 +1,5 @@
-+++
+
+alwaysopen = false+++
 title = "Theorem"
 description = "左看右看每条定理都不简单"
 categories = ["Math"]

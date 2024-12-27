@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Latex"
 description = "写论文真爽啊"
 categories = ["Programming"]

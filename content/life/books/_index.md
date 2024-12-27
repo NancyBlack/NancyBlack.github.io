@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Books"
 description = "希望能看吧"
 categories = ["Book"]

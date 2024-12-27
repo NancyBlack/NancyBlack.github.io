@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Life"
 type = "chapter"
 description = "哎嘿就是浪"

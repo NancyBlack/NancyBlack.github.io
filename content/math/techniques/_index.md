@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Techniques"
 description = "emmm也许这样算的快？"
 categories = ["Math"]

@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Markdown"
 description = "接触的第一种脚本语言"
 categories = ["Programming"]

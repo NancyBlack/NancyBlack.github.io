@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Axiom"
 description = "欧氏几何够我看一辈子"
 categories = ["Math"]

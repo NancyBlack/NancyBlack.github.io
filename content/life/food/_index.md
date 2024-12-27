@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = "Food"
 description = "都是食谱啦"
 categories = ["Food"]
