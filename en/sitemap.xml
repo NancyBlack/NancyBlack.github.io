@@ -7,10 +7,13 @@
     <loc>https://example.com/technology/stm32h7/bug/index.html</loc>
   </url>
   <url>
-    <loc>https://example.com/programming/c&#43;&#43;/index.html</loc>
+    <loc>https://example.com/programming/c%E8%89%B9/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/life/food/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/programming/office/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/technology/pmsm/index.html</loc>
@@ -19,13 +22,22 @@
     <loc>https://example.com/technology/index.html</loc>
   </url>
   <url>
+    <loc>https://example.com/programming/office/word/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.com/technology/pmsm/%E7%9F%A2%E9%87%8F%E6%8E%A7%E5%88%B6/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/programming/c/index.html</loc>
   </url>
   <url>
+    <loc>https://example.com/programming/office/excel/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.com/technology/stm32h7/gpio/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/life/techniques/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/technology/pmsm/pid%E6%8E%A7%E5%88%B6/index.html</loc>
@@ -37,12 +49,6 @@
     <loc>https://example.com/technology/stm32h7/index.html</loc>
   </url>
   <url>
-    <loc>https://example.com/math/theorem/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.com/life/travel/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.com/life/books/index.html</loc>
   </url>
   <url>
@@ -50,6 +56,9 @@
   </url>
   <url>
     <loc>https://example.com/math/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/programming/office/ppt/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/math/techniques/index.html</loc>
@@ -62,6 +71,9 @@
   </url>
   <url>
     <loc>https://example.com/science/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/life/travel/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/programming/auto-hot-key/index.html</loc>
@@ -89,6 +101,9 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/categories/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://example.com/categories/index.html" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://example.com/zh-cn/categories/index.html" />
+  </url>
+  <url>
+    <loc>https://example.com/tags/excel/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/index.html</loc>
@@ -121,6 +136,9 @@
     <loc>https://example.com/categories/law/index.html</loc>
   </url>
   <url>
+    <loc>https://example.com/categories/life/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.com/tags/markdown/index.html</loc>
   </url>
   <url>
@@ -136,6 +154,12 @@
     <loc>https://example.com/tags/obsidian/index.html</loc>
   </url>
   <url>
+    <loc>https://example.com/tags/office/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/categories/office/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.com/options/index.html</loc>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/options/index.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://example.com/options/index.html" />
@@ -146,6 +170,9 @@
   </url>
   <url>
     <loc>https://example.com/tags/pmsm/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/tags/ppt/index.html</loc>
   </url>
   <url>
     <loc>https://example.com/categories/programming/index.html</loc>
@@ -182,5 +209,8 @@
   </url>
   <url>
     <loc>https://example.com/tags/vscode/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/tags/word/index.html</loc>
   </url>
 </urlset>

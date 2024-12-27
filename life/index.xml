@@ -15,11 +15,11 @@
       <description>都是食谱啦</description>
     </item>
     <item>
-      <title>Travel</title>
-      <link>https://example.com/life/travel/index.html</link>
+      <title>Life hacks</title>
+      <link>https://example.com/life/techniques/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/life/travel/index.html</guid>
-      <description>逛吃逛吃逛吃逛吃~</description>
+      <guid>https://example.com/life/techniques/index.html</guid>
+      <description>世界总是由懒人推动的</description>
     </item>
     <item>
       <title>Books</title>
@@ -27,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.com/life/books/index.html</guid>
       <description>希望能看吧</description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>https://example.com/life/travel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/life/travel/index.html</guid>
+      <description>逛吃逛吃逛吃逛吃~</description>
     </item>
   </channel>
 </rss>

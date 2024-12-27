@@ -22,14 +22,14 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programming",
-    "content": "2024-12-26 20:13:11\n别说我不文明啊hugo的title有符号会自己产生bug，他识别的居然不是字符串就神奇以后有机会的话研究研究",
+    "content": "2024-12-26 20:13:11\n别说我不文明啊hugo的网址有符号会自己产生bug，他识别的居然不是字符串就神奇以后有机会的话研究研究",
     "description": "文明你我他",
     "tags": [
       "C++",
       "VS"
     ],
-    "title": "C艹",
-    "uri": "/programming/c\u0026#43;\u0026#43;/index.html"
+    "title": "C++",
+    "uri": "/programming/c%E8%89%B9/index.html"
   },
   {
     "breadcrumb": "Life",
@@ -40,6 +40,16 @@ var relearn_searchindex = [
     ],
     "title": "Food",
     "uri": "/life/food/index.html"
+  },
+  {
+    "breadcrumb": "Programming",
+    "content": "2024-12-27 17:02:05\n别问我他为什么在programming里单独给这玩意列个大文件夹它配吗！！！\nWord看标题\nExcel看标题啊\nPPT真不看标题啊",
+    "description": "三件套走一个",
+    "tags": [
+      "Office"
+    ],
+    "title": "Office",
+    "uri": "/programming/office/index.html"
   },
   {
     "breadcrumb": "Technology",
@@ -58,6 +68,17 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Technology",
     "uri": "/technology/index.html"
+  },
+  {
+    "breadcrumb": "Programming \u003e Office",
+    "content": "2024-12-27 17:02:35\n论文饶过谁",
+    "description": "看标题",
+    "tags": [
+      "Office",
+      "Word"
+    ],
+    "title": "Word",
+    "uri": "/programming/office/word/index.html"
   },
   {
     "breadcrumb": "Technology \u003e PMSM",
@@ -82,6 +103,17 @@ var relearn_searchindex = [
     "uri": "/programming/c/index.html"
   },
   {
+    "breadcrumb": "Programming \u003e Office",
+    "content": "2024-12-27 17:02:45\n省计算器",
+    "description": "看标题啊",
+    "tags": [
+      "Office",
+      "Excel"
+    ],
+    "title": "Excel",
+    "uri": "/programming/office/excel/index.html"
+  },
+  {
     "breadcrumb": "Technology \u003e STM32H7",
     "content": "2024-12-26 19:59:17\n先这么写着，等开始写再说",
     "description": "都是从这开始的吧",
@@ -91,6 +123,14 @@ var relearn_searchindex = [
     ],
     "title": "GPIO",
     "uri": "/technology/stm32h7/gpio/index.html"
+  },
+  {
+    "breadcrumb": "Life",
+    "content": "2024-12-27 17:58:26\n从哪里跌倒，就从哪里趴会~",
+    "description": "世界总是由懒人推动的",
+    "tags": [],
+    "title": "Life hacks",
+    "uri": "/life/techniques/index.html"
   },
   {
     "breadcrumb": "Technology \u003e PMSM",
@@ -106,7 +146,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "",
-    "content": "想搓出一个世界怎么能少得了代码\nC艹文明你我他\nC单片机跑不掉的\nMarkdown接触的第一种脚本语言\nLatex写论文真爽啊\nAuto-Hot-Key接触的第二种脚本语言",
+    "content": "想搓出一个世界怎么能少得了代码\nC++文明你我他\nOffice三件套走一个\nC单片机跑不掉的\nMarkdown接触的第一种脚本语言\nLatex写论文真爽啊\nAuto-Hot-Key接触的第二种脚本语言",
     "description": "能跑的bug就是好bug",
     "tags": [],
     "title": "Programming",
@@ -121,25 +161,6 @@ var relearn_searchindex = [
     ],
     "title": "STM32H7",
     "uri": "/technology/stm32h7/index.html"
-  },
-  {
-    "breadcrumb": "Math",
-    "content": "2024-12-26 20:43:38\n总有那么多奇奇怪怪又可可爱爱~",
-    "description": "左看右看每条定理都不简单",
-    "tags": [
-      "Math",
-      "Matlab"
-    ],
-    "title": "Theorem",
-    "uri": "/math/theorem/index.html"
-  },
-  {
-    "breadcrumb": "Life",
-    "content": "2024-12-26 20:54:00\n啊也不知道能去几个地方",
-    "description": "逛吃逛吃逛吃逛吃~",
-    "tags": [],
-    "title": "Travel",
-    "uri": "/life/travel/index.html"
   },
   {
     "breadcrumb": "Life",
@@ -162,11 +183,22 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "",
-    "content": "哇这个世界永远这么奇妙！\nAxiom欧氏几何够我看一辈子\nTheorem左看右看每条定理都不简单\nTechniquesemmm也许这样算的快？\nHistory八卦谁不爱呢",
+    "content": "哇这个世界永远这么奇妙！\nAxiom欧氏几何够我看一辈子\nTechniquesemmm也许这样算的快？\nHistory八卦谁不爱呢",
     "description": "一生二，二生三，三生万物",
     "tags": [],
     "title": "Math",
     "uri": "/math/index.html"
+  },
+  {
+    "breadcrumb": "Programming \u003e Office",
+    "content": "2024-12-27 17:02:50\n跑得了和尚跑不了庙",
+    "description": "真不看标题啊",
+    "tags": [
+      "Office",
+      "Ppt"
+    ],
+    "title": "PPT",
+    "uri": "/programming/office/ppt/index.html"
   },
   {
     "breadcrumb": "Math",
@@ -208,6 +240,14 @@ var relearn_searchindex = [
     "uri": "/science/index.html"
   },
   {
+    "breadcrumb": "Life",
+    "content": "2024-12-26 20:54:00\n啊也不知道能去几个地方",
+    "description": "逛吃逛吃逛吃逛吃~",
+    "tags": [],
+    "title": "Travel",
+    "uri": "/life/travel/index.html"
+  },
+  {
     "breadcrumb": "Programming",
     "content": "2024-12-26 20:13:27\n你绝对猜不到我为什么会学这个东西[做过晋江审核吗？没错就是为了在win10桌面写一个自动点击器]",
     "description": "接触的第二种脚本语言",
@@ -219,7 +259,7 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "",
-    "content": "写点零零碎碎，看到的食谱[收藏吃灰]，想看的书[看着就高大上]，去过的地方[主要是吃]\nFood都是食谱啦\nTravel逛吃逛吃逛吃逛吃~\nBooks希望能看吧",
+    "content": "写点零零碎碎，看到的食谱[收藏吃灰]，想看的书[看着就高大上]，去过的地方[主要是吃]\nFood都是食谱啦\nLife hacks世界总是由懒人推动的\nBooks希望能看吧\nTravel逛吃逛吃逛吃逛吃~",
     "description": "哎嘿就是浪",
     "tags": [],
     "title": "Life",
@@ -272,6 +312,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Categories",
     "uri": "/categories/index.html"
+  },
+  {
+    "breadcrumb": "Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Excel",
+    "uri": "/tags/excel/index.html"
   },
   {
     "breadcrumb": "",
@@ -338,6 +386,14 @@ var relearn_searchindex = [
     "uri": "/categories/law/index.html"
   },
   {
+    "breadcrumb": "Categories",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Category :: Life",
+    "uri": "/categories/life/index.html"
+  },
+  {
     "breadcrumb": "Tags",
     "content": "",
     "description": "",
@@ -378,6 +434,22 @@ var relearn_searchindex = [
     "uri": "/tags/obsidian/index.html"
   },
   {
+    "breadcrumb": "Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Office",
+    "uri": "/tags/office/index.html"
+  },
+  {
+    "breadcrumb": "Categories",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Category :: Office",
+    "uri": "/categories/office/index.html"
+  },
+  {
     "breadcrumb": "",
     "content": "",
     "description": "",
@@ -400,6 +472,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tag :: PMSM",
     "uri": "/tags/pmsm/index.html"
+  },
+  {
+    "breadcrumb": "Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Ppt",
+    "uri": "/tags/ppt/index.html"
   },
   {
     "breadcrumb": "Categories",
@@ -488,5 +568,13 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tag :: VsCode",
     "uri": "/tags/vscode/index.html"
+  },
+  {
+    "breadcrumb": "Tags",
+    "content": "",
+    "description": "",
+    "tags": [],
+    "title": "Tag :: Word",
+    "uri": "/tags/word/index.html"
   }
 ]
