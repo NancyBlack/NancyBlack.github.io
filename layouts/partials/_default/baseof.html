@@ -39,6 +39,8 @@
     {{- partial "stylesheet.html" . }}
     {{- partial "dependencies.gotmpl" (dict "page" . "location" "header") }}
     {{- partial "custom-header.html" . }}
+    <script src="https://cdn1.lncld.net/static/js/av.js"></script>
+    <link rel="stylesheet" href="{{ "css/comments.css" | relURL }}">
   </head>
   <body class="mobile-support {{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}{{- if .Site.Params.disableInlineCopyToClipBoard }} disableInlineCopyToClipboard{{ end }}{{- if .Site.Params.disableHoverBlockCopyToClipBoard }} disableHoverBlockCopyToClipBoard{{ end }}" data-url="{{ partial "permalink.gotmpl" (dict "to" .) }}">
     <div id="R-body" class="default-animation">
@@ -70,6 +72,7 @@
 {{- block "body" . }}{{ end }}
         </div>
       </main>
+
 {{- partial "custom-comments.html" . }}
     </div>
 {{- block "menu" . }}{{ end }}
@@ -79,5 +82,6 @@
 {{- partial "dependencies.gotmpl" (dict "page" . "location" "footer") }}
     <script src="{{"js/theme.js" | relURL}}{{ $assetBusting }}" defer></script>
 {{- partial "custom-footer.html" . }}
+    <script src="{{ "js/comments.js" | relURL }}"></script>
   </body>
 </html>

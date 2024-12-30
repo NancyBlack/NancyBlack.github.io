@@ -1,0 +1,215 @@
+/* 基本样式设置 */
+body {
+    font-family: Arial, sans-serif; /* 设置全局字体 */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* 设置背景色 */
+}
+
+/* 评论区容器样式 */
+#comment-section {
+    width: 80%; /* 设置评论区的宽度 */
+    margin: 20px auto; /* 居中显示 */
+    background-color: #fff; /* 评论区背景色 */
+    padding: 20px;
+    border-radius: 10px; /* 圆角效果 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 轻微的阴影 */
+}
+
+@media (max-width: 768px) {
+    #comment-section {
+        width: 95%;
+    }
+}
+
+/* 单条评论的样式 */
+.comment-item {
+    border-bottom: 1px solid #e1e1e1; /* 每条评论之间的分隔线 */
+    padding: 10px 0;
+}
+
+.comment-item:last-child {
+    border-bottom: none; /* 最后一条评论不显示分隔线 */
+}
+
+/* 评论内容样式 */
+.comment-item p {
+    font-size: 16px; /* 设置评论内容的字体大小 */
+    color: #333; /* 评论文字颜色 */
+    margin-bottom: 10px; /* 内容下方与其他元素的间距 */
+}
+
+/* 评论者信息 */
+.comment-item small {
+    font-size: 12px; /* 昵称和时间的字体大小 */
+    color: #888; /* 昵称和时间的颜色 */
+}
+
+/* 点赞按钮 */
+.comment-item button {
+    background-color: rgb(139, 229, 80); /* 按钮背景色 */
+    color: #fff; /* 按钮文字颜色 */
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px; /* 圆角按钮 */
+    cursor: pointer; /* 鼠标悬停时变成手型 */
+    transition: background-color 0.3s; /* 过渡效果 */
+}
+
+.comment-item button:hover {
+    background-color: #f57c00; /* 按钮悬停时背景色 */
+}
+
+/* 回复按钮样式 */
+.comment-item .replies button {
+    margin-top: 10px;
+    background-color: #009688; /* 回复按钮背景色 */
+}
+
+.replies textarea {
+    width: 80%; /* 设置回复框宽度 */
+    height: 50px; /* 高度 */
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* 边框 */
+    font-size: 14px;
+    resize: vertical; /* 允许垂直方向上调整大小 */
+    overflow: auto; /* 内容溢出时显示滚动条 */
+}
+
+.replies button {
+    background-color: #4caf50; /* 回复按钮背景色 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.replies button:hover {
+    background-color: #388e3c; /* 悬停时颜色 */
+}
+
+.comment-item button:focus,
+.replies button:focus {
+    outline: none; /* 移除默认的焦点框 */
+    box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.6); /* 聚焦时加上自定义的边框 */
+}
+
+/* 输入框样式 */
+/* 评论区输入框容器 */
+.comment-form {
+    width: 80%; /* 设置容器宽度为80% */
+    margin: 20px auto; /* 容器居中 */
+}
+
+/* 第一行：输入框 */
+.comment-form .textarea-container {
+    width: 100%; /* 容器宽度100% */
+    margin-bottom: 20px; /* 下方留空 */
+}
+
+.comment-form textarea {
+    width: 100%; /* 宽度100%，占据容器 */
+    height: 60px;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 第二行：昵称输入框、图片选择和提交按钮 */
+.comment-form .info-container {
+    display: flex; /* 使用flex布局 */
+    justify-content: flex-start; /* 左对齐 */
+    align-items: baseline; /* 垂直居中对齐 */
+    gap: 100px; /* 子元素之间的间距 */
+}
+
+/* 昵称输入框 */
+.comment-form .nickname-input {
+    min-width: 150px; /* 设置最小宽度，避免过窄 */
+    flex: 2; /* 增大比例，确保它占据更多空间 */
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 图片选择框 */
+.comment-form .image-upload {
+    min-width: 120px; /* 可以设置图片选择框的最小宽度 */
+}
+
+.comment-form .image-upload input[type="file"] {
+    font-size: 14px;
+}
+
+/* 提交按钮 */
+.comment-form .submit-button {
+    padding: 2px 15px;
+    font-size: 14px;
+    background-color: var(--PRIMARY-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form .submit-button:hover {
+    color: white;
+    background-color: var(--PRIMARY-color);
+    filter: brightness(0.95);
+}
+
+/* 分页容器样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;  /* 让分页按钮与评论内容有间距 */
+  }
+  
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 分页按钮样式 */
+  .pagination-button {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 5px;
+    background-color: transparent; /* 使用主题颜色 */
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .pagination-button:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+  }
+  
+  /* 页码样式 */
+  .page-number {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  
+  .page-number.active {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-bottom: 5px; /* 页码下方横线 */
+    border-bottom: 2px solid var(--PRIMARY-color); /* 横线 */
+  }
+  
