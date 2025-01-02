@@ -19,12 +19,12 @@
     <meta itemprop="image" content="https://example.com/images/favicon.svg">
     <title>PMSM :: Tag</title>
     <link href="../../tags/pmsm/index.xml" rel="alternate" type="application/rss+xml" title="PMSM :: Tag">
-    <link href="../../images/favicon.svg?1735563166" rel="icon" type="image/svg+xml">
-    <link href="../../css/fontawesome-all.min.css?1735563166" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1735563166" rel="stylesheet"></noscript>
-    <link href="../../css/auto-complete.css?1735563166" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1735563166" rel="stylesheet"></noscript>
-    <link href="../../css/perfect-scrollbar.min.css?1735563166" rel="stylesheet">
-    <link href="../../css/theme.min.css?1735563166" rel="stylesheet">
-    <link href="../../css/format-html.min.css?1735563166" rel="stylesheet" id="R-format-style">
+    <link href="../../images/favicon.svg?1735819219" rel="icon" type="image/svg+xml">
+    <link href="../../css/fontawesome-all.min.css?1735819219" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/fontawesome-all.min.css?1735819219" rel="stylesheet"></noscript>
+    <link href="../../css/auto-complete.css?1735819219" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../css/auto-complete.css?1735819219" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar.min.css?1735819219" rel="stylesheet">
+    <link href="../../css/theme.min.css?1735819219" rel="stylesheet">
+    <link href="../../css/format-html.min.css?1735819219" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -72,7 +72,6 @@
       window.T_No_results_found = `No results found for "{0}"`;
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
-    <script src="https://cdn1.lncld.net/static/js/av.js"></script>
   </head>
   <body class="mobile-support html disableInlineCopyToClipboard" data-url="../../tags/pmsm/index.html">
     <div id="R-body" class="default-animation">
@@ -138,49 +137,97 @@
   </footer>
 </article>
         </div>
+<head>
+  
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+  <link rel="stylesheet" href="css/lightbox.min.css"/>
+
+  
+  <style>
+     
+    #waline .wl-content img {
+      display: block;
+      max-width: 200px;  
+      height: auto;
+      margin: 10px 0;
+      text-align: left;
+    }
+
+    #lightbox {      
+      display: flex;               
+      flex-direction: column;              
+      justify-content: center;             
+      align-items: center !important;         
+      top: 0 !important;                     
+      left: 0;                     
+      right: 0;                    
+      bottom: 0;                   
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  
+</head>
+<body>
+  
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://my-vercel-waline-comments.vercel.app',
+      comment: true,  
+      emoji: true,  
+      highlight: true, 
+      IPQPS: 10,
+      requiredFields: ['nick'], 
+      pageSize: 5,
+      beforeComment: (comment) => {
+        if (!comment.content) {
+            alert("评论内容不能为空！");
+            return false;
+        }
+        return true;
+      },
+      LEVELS: [0,10,20,50,100,200],
+      locale: {
+        level0: '潜水',
+        level1: '冒泡',
+        level2: '吐槽',
+        level3: '活跃',
+        level4: '话痨',
+        level5: '传说',
+        nick: '昵称',
+        nickError: '昵称不能为空',  
+        placeholder: '一起来一起来~',
+        sofa: '来发评论吧~',
+        oldest: '倒序',
+        latest: '正序',
+        hottest: '最热',
+      },    
+    });
+    document.addEventListener('click', (e) => {
+      const images = [].slice
+        .call(document.querySelectorAll('#waline .wl-content img'))
+        .filter((img) => img.width > 20);
+
+      if (images.indexOf(e.target) === -1) {
+        return;
+      }
+
+      const $link = $('<a />', {
+        href: e.target.src,
+        'data-title': e.target.alt,
+        rel: 'lightbox',
+      });
+      lightbox.start($link);
+    });
+  </script>  
+</body>
+      <div id="waline"></div>
       </main>
-
-
-<link rel="stylesheet" href="../../css/comments.css">
-
-
-<div id="comment-section"></div>
-
-
-<div id="pagination-container" class="pagination">
-    
-    <div id="pagination-controls" class="pagination-controls">
-      
-      <button onclick="prevPage()" class="pagination-button" id="prev-btn">上一页</button>
-  
-      
-      <div id="page-numbers" class="page-numbers"></div>
-  
-      
-      <button onclick="nextPage()" class="pagination-button" id="next-btn">下一页</button>
-    </div>
-  </div>
-
-
-<div id="comment-input-area" class="comment-form">
-    
-    <div class="textarea-container">
-      <textarea id="comment-input" placeholder="请输入评论"></textarea>
-    </div>
-  
-    
-    <div class="info-container">
-      <input type="text" id="username-input" class="nickname-input" placeholder="输入昵称（默认匿名）">
-      <input type="file" id="image-input" class="image-upload" accept="image/*">
-      <button onclick="postComment()" class="submit-button">提交评论</button>
-    </div>
-</div>
-
-
-<script src="../../js/comments.js"></script>
-
-
-
     </div>
     <aside id="R-sidebar" class="default-animation showVisitedLinks">
       <div id="R-header-topbar" class="default-animation"></div>
@@ -239,7 +286,7 @@
           
         </div>
         <script>
-          window.index_js_url="../../searchindex.en.js?1735563166";
+          window.index_js_url="../../searchindex.en.js?1735819219";
         </script>
         <search><form action="../../search/index.html" method="get">
           <div class="searchbox default-animation">
@@ -252,12 +299,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="../../js/auto-complete.js?1735563166" defer></script>
-        <script src="../../js/lunr/lunr.min.js?1735563166" defer></script>
-        <script src="../../js/lunr/lunr.stemmer.support.min.js?1735563166" defer></script>
-        <script src="../../js/lunr/lunr.multi.min.js?1735563166" defer></script>
-        <script src="../../js/lunr/lunr.en.min.js?1735563166" defer></script>
-        <script src="../../js/search.js?1735563166" defer></script>
+        <script src="../../js/auto-complete.js?1735819219" defer></script>
+        <script src="../../js/lunr/lunr.min.js?1735819219" defer></script>
+        <script src="../../js/lunr/lunr.stemmer.support.min.js?1735819219" defer></script>
+        <script src="../../js/lunr/lunr.multi.min.js?1735819219" defer></script>
+        <script src="../../js/lunr/lunr.en.min.js?1735819219" defer></script>
+        <script src="../../js/search.js?1735819219" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -399,13 +446,13 @@
                 setTimeout( githubButtonsInit, 400 );
               });
             </script>
-            <script async src="../../js/github-buttons.js?1735563166"></script>
+            <script async src="../../js/github-buttons.js?1735819219"></script>
           </div>
         </div>
       </div>
     </aside>
-    <script src="../../js/clipboard.min.js?1735563166" defer></script>
-    <script src="../../js/perfect-scrollbar.min.js?1735563166" defer></script>
+    <script src="../../js/clipboard.min.js?1735819219" defer></script>
+    <script src="../../js/perfect-scrollbar.min.js?1735819219" defer></script>
     <script>
       function useMathJax( config ){
         window.MathJax = Object.assign( window.MathJax || {}, {
@@ -421,6 +468,6 @@
       useMathJax( JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://unpkg.com/mathjax/es5/tex-mml-chtml.js"></script>
-    <script src="../../js/theme.js?1735563166" defer></script>
+    <script src="../../js/theme.js?1735819219" defer></script>
   </body>
 </html>
