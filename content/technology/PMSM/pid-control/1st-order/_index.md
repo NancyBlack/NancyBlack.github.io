@@ -88,6 +88,6 @@ $-45^{\circ}$与计算值$46.8^{\circ}$基本一致。
 
 分别绘制开环增益为0.1、1、10、100时$\dfrac{K}{s+1}$的Bode图：
 
-<img src="/images/technology/PMSM/pid/1st-order/01110100.PNG" width="70%" />
+<img src="/images/technology/PMSM/pid/1st-order/01110100.png" width="70%" />
 
 从下到上依次为0.1、1、10、100，可以看出开环增益对相频曲线没有影响，但会使幅频曲线平行上移。这会导致幅频曲线与横轴的交点右移，从而使截止频率$\omega_c$增大
