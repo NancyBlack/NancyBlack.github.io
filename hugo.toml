@@ -195,6 +195,7 @@ summaryLength = 10
   searchPageURL = 'search'
   showVisitedLinks = true
   titleSeparator = '::'
+  version = "0.1.1"
 
   [params.author]
     name = 'Fei kun'

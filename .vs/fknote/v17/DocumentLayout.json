@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\My_Site\\fknote\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\My_Site\\fknote\\content\\technology\\PMSM\\pid\u63A7\u5236\\\u4E00\u9636\u60EF\u6027\u73AF\u8282\\\u4E00\u9636\u60EF\u6027\u73AF\u8282.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:content\\technology\\PMSM\\pid\u63A7\u5236\\\u4E00\u9636\u60EF\u6027\u73AF\u8282\\\u4E00\u9636\u60EF\u6027\u73AF\u8282.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\My_Site\\fknote\\hugo.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hugo.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\My_Site\\fknote\\content\\technology\\PMSM\\pid\u63A7\u5236\\_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:content\\technology\\PMSM\\pid\u63A7\u5236\\_index.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\My_Site\\fknote\\layouts\\partials\\menu-footer.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:layouts\\partials\\menu-footer.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "\u4E00\u9636\u60EF\u6027\u73AF\u8282.md",
-              "DocumentMoniker": "F:\\My_Site\\fknote\\content\\technology\\PMSM\\pid\u63A7\u5236\\\u4E00\u9636\u60EF\u6027\u73AF\u8282\\\u4E00\u9636\u60EF\u6027\u73AF\u8282.md",
-              "RelativeDocumentMoniker": "content\\technology\\PMSM\\pid\u63A7\u5236\\\u4E00\u9636\u60EF\u6027\u73AF\u8282\\\u4E00\u9636\u60EF\u6027\u73AF\u8282.md",
-              "ToolTip": "F:\\My_Site\\fknote\\content\\technology\\PMSM\\pid\u63A7\u5236\\\u4E00\u9636\u60EF\u6027\u73AF\u8282\\\u4E00\u9636\u60EF\u6027\u73AF\u8282.md",
-              "RelativeToolTip": "content\\technology\\PMSM\\pid\u63A7\u5236\\\u4E00\u9636\u60EF\u6027\u73AF\u8282\\\u4E00\u9636\u60EF\u6027\u73AF\u8282.md",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-01-14T10:23:39.231Z",
+              "Title": "hugo.toml",
+              "DocumentMoniker": "F:\\My_Site\\fknote\\hugo.toml",
+              "RelativeDocumentMoniker": "hugo.toml",
+              "ToolTip": "F:\\My_Site\\fknote\\hugo.toml",
+              "RelativeToolTip": "hugo.toml",
+              "ViewState": "AgIAALMAAAAAAAAAAAA3wMUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-02T07:27:58.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_index.md",
-              "DocumentMoniker": "F:\\My_Site\\fknote\\content\\technology\\PMSM\\pid\u63A7\u5236\\_index.md",
-              "RelativeDocumentMoniker": "content\\technology\\PMSM\\pid\u63A7\u5236\\_index.md",
-              "ToolTip": "F:\\My_Site\\fknote\\content\\technology\\PMSM\\pid\u63A7\u5236\\_index.md",
-              "RelativeToolTip": "content\\technology\\PMSM\\pid\u63A7\u5236\\_index.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-01-14T08:38:51.409Z",
+              "Title": "menu-footer.html",
+              "DocumentMoniker": "F:\\My_Site\\fknote\\layouts\\partials\\menu-footer.html",
+              "RelativeDocumentMoniker": "layouts\\partials\\menu-footer.html",
+              "ToolTip": "F:\\My_Site\\fknote\\layouts\\partials\\menu-footer.html",
+              "RelativeToolTip": "layouts\\partials\\menu-footer.html",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-02T07:25:54.594Z",
               "EditorCaption": ""
             }
           ]
