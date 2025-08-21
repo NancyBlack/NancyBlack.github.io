@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Travel :: Category</title>
+    <link>https://NancyBlack.github.io/categories/travel/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/categories/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Travel</title>
+      <link>https://NancyBlack.github.io/life/travel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/life/travel/index.html</guid>
+      <description>逛吃逛吃逛吃逛吃~</description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>https://NancyBlack.github.io/life/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/life/index.html</guid>
+      <description>哎嘿就是浪</description>
+    </item>
+  </channel>
+</rss>

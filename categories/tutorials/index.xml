@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials :: Category</title>
+    <link>https://NancyBlack.github.io/categories/tutorials/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/categories/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUG</title>
+      <link>https://NancyBlack.github.io/technology/stm32h7/bug/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/stm32h7/bug/index.html</guid>
+      <description>反正你总能遇到</description>
+    </item>
+    <item>
+      <title>矢量控制</title>
+      <link>https://NancyBlack.github.io/technology/pmsm/vector-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/pmsm/vector-control/index.html</guid>
+      <description>这个六边形哪都能见到</description>
+    </item>
+    <item>
+      <title>GPIO</title>
+      <link>https://NancyBlack.github.io/technology/stm32h7/gpio/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/stm32h7/gpio/index.html</guid>
+      <description>都是从这开始的吧</description>
+    </item>
+    <item>
+      <title>Pid控制</title>
+      <link>https://NancyBlack.github.io/technology/pmsm/pid-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/pmsm/pid-control/index.html</guid>
+      <description>电机闭环啦</description>
+    </item>
+    <item>
+      <title>Office</title>
+      <link>https://NancyBlack.github.io/programming/office/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/office/index.html</guid>
+      <description>三件套走一个</description>
+    </item>
+  </channel>
+</rss>

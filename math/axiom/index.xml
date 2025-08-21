@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Axiom</title>
+    <link>https://NancyBlack.github.io/math/axiom/index.html</link>
+    <description>欧氏几何够我看一辈子</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/math/axiom/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feikun&#39;s note</title>
+    <link>https://NancyBlack.github.io/index.html</link>
+    <description>This is a website built by Feikun using Hugo.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technology</title>
+      <link>https://NancyBlack.github.io/technology/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/index.html</guid>
+      <description>发工资先换把焊枪！</description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://NancyBlack.github.io/programming/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/index.html</guid>
+      <description>能跑的bug就是好bug</description>
+    </item>
+    <item>
+      <title>Math</title>
+      <link>https://NancyBlack.github.io/math/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/math/index.html</guid>
+      <description>一生二，二生三，三生万物</description>
+    </item>
+    <item>
+      <title>Science</title>
+      <link>https://NancyBlack.github.io/science/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/science/index.html</guid>
+      <description>这个世界真奇秒</description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>https://NancyBlack.github.io/life/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/life/index.html</guid>
+      <description>哎嘿就是浪</description>
+    </item>
+    <item>
+      <title>Law</title>
+      <link>https://NancyBlack.github.io/law/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/law/index.html</guid>
+      <description>生死看淡不服就干</description>
+    </item>
+    <item>
+      <title>Changelog</title>
+      <link>https://NancyBlack.github.io/changelog/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/changelog/index.html</guid>
+      <description>更新日志</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://NancyBlack.github.io/math/theorem/index.html</link>
+    <description>alwaysopen = false+++ title = “Theorem” description = “左看右看每条定理都不简单” categories = [“Math”] tags = [“Math”,“Matlab”] weight = 2 +++&#xA;2024-12-26 20:43:38&#xA;总有那么多奇奇怪怪又可可爱爱~</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/math/theorem/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

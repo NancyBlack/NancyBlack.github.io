@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming</title>
+    <link>https://NancyBlack.github.io/programming/index.html</link>
+    <description>能跑的bug就是好bug</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://NancyBlack.github.io/programming/c%E8%89%B9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/c%E8%89%B9/index.html</guid>
+      <description>文明你我他</description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>https://NancyBlack.github.io/programming/c/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/c/index.html</guid>
+      <description>单片机跑不掉的</description>
+    </item>
+    <item>
+      <title>Matlab/Simulink</title>
+      <link>https://NancyBlack.github.io/programming/matlabsimulink/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/matlabsimulink/index.html</guid>
+      <description>这玩意儿简直完美</description>
+    </item>
+    <item>
+      <title>Win10</title>
+      <link>https://NancyBlack.github.io/programming/win10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/win10/index.html</guid>
+      <description>搞搞电脑</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://NancyBlack.github.io/programming/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/markdown/index.html</guid>
+      <description>接触的第一种脚本语言</description>
+    </item>
+    <item>
+      <title>Latex</title>
+      <link>https://NancyBlack.github.io/programming/latex/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/latex/index.html</guid>
+      <description>写论文真爽啊</description>
+    </item>
+    <item>
+      <title>Auto-Hot-Key</title>
+      <link>https://NancyBlack.github.io/programming/auto-hot-key/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/auto-hot-key/index.html</guid>
+      <description>接触的第二种脚本语言</description>
+    </item>
+    <item>
+      <title>Office</title>
+      <link>https://NancyBlack.github.io/programming/office/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/office/index.html</guid>
+      <description>三件套走一个</description>
+    </item>
+  </channel>
+</rss>

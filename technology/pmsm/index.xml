@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PMSM</title>
+    <link>https://NancyBlack.github.io/technology/pmsm/index.html</link>
+    <description>电机它转呀转不停</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/technology/pmsm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>矢量控制</title>
+      <link>https://NancyBlack.github.io/technology/pmsm/vector-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/pmsm/vector-control/index.html</guid>
+      <description>这个六边形哪都能见到</description>
+    </item>
+    <item>
+      <title>Pid控制</title>
+      <link>https://NancyBlack.github.io/technology/pmsm/pid-control/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/technology/pmsm/pid-control/index.html</guid>
+      <description>电机闭环啦</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags</title>
+    <link>https://NancyBlack.github.io/tags/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag :: AHK</title>
+      <link>https://NancyBlack.github.io/tags/ahk/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/ahk/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: C</title>
+      <link>https://NancyBlack.github.io/tags/c/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/c/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: C&#43;&#43;</title>
+      <link>https://NancyBlack.github.io/tags/c&#43;&#43;/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/c&#43;&#43;/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Excel</title>
+      <link>https://NancyBlack.github.io/tags/excel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/excel/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Food</title>
+      <link>https://NancyBlack.github.io/tags/food/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/food/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: GPIO</title>
+      <link>https://NancyBlack.github.io/tags/gpio/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/gpio/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Latex</title>
+      <link>https://NancyBlack.github.io/tags/latex/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/latex/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Markdown</title>
+      <link>https://NancyBlack.github.io/tags/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/markdown/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Math</title>
+      <link>https://NancyBlack.github.io/tags/math/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/math/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Matlab</title>
+      <link>https://NancyBlack.github.io/tags/matlab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/matlab/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Obsidian</title>
+      <link>https://NancyBlack.github.io/tags/obsidian/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/obsidian/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Office</title>
+      <link>https://NancyBlack.github.io/tags/office/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/office/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Pid</title>
+      <link>https://NancyBlack.github.io/tags/pid/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/pid/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: PMSM</title>
+      <link>https://NancyBlack.github.io/tags/pmsm/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/pmsm/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Ppt</title>
+      <link>https://NancyBlack.github.io/tags/ppt/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/ppt/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Simulink</title>
+      <link>https://NancyBlack.github.io/tags/simulink/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/simulink/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: STM32</title>
+      <link>https://NancyBlack.github.io/tags/stm32/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/stm32/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: VS</title>
+      <link>https://NancyBlack.github.io/tags/vs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/vs/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Win10</title>
+      <link>https://NancyBlack.github.io/tags/win10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/win10/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tag :: Word</title>
+      <link>https://NancyBlack.github.io/tags/word/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/tags/word/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

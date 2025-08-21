@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标签 :: Arrr, my Website</title>
+    <link>https://NancyBlack.github.io/zh-cn/tags/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <atom:link href="https://NancyBlack.github.io/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>标签 :: Win10</title>
+      <link>https://NancyBlack.github.io/zh-cn/tags/win10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/zh-cn/tags/win10/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

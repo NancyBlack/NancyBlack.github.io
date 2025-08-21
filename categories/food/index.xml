@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Food :: Category</title>
+    <link>https://NancyBlack.github.io/categories/food/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/categories/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Food</title>
+      <link>https://NancyBlack.github.io/life/food/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/life/food/index.html</guid>
+      <description>都是食谱啦</description>
+    </item>
+    <item>
+      <title>Life</title>
+      <link>https://NancyBlack.github.io/life/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/life/index.html</guid>
+      <description>哎嘿就是浪</description>
+    </item>
+  </channel>
+</rss>

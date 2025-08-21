@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories</title>
+    <link>https://NancyBlack.github.io/categories/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Category :: Book</title>
+      <link>https://NancyBlack.github.io/categories/book/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/book/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Food</title>
+      <link>https://NancyBlack.github.io/categories/food/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/food/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: History</title>
+      <link>https://NancyBlack.github.io/categories/history/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/history/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Law</title>
+      <link>https://NancyBlack.github.io/categories/law/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/law/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Life</title>
+      <link>https://NancyBlack.github.io/categories/life/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/life/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Math</title>
+      <link>https://NancyBlack.github.io/categories/math/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/math/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Office</title>
+      <link>https://NancyBlack.github.io/categories/office/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/office/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Programming</title>
+      <link>https://NancyBlack.github.io/categories/programming/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/programming/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Science</title>
+      <link>https://NancyBlack.github.io/categories/science/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/science/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Society</title>
+      <link>https://NancyBlack.github.io/categories/society/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/society/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Technology</title>
+      <link>https://NancyBlack.github.io/categories/technology/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/technology/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Travel</title>
+      <link>https://NancyBlack.github.io/categories/travel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/travel/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Category :: Tutorials</title>
+      <link>https://NancyBlack.github.io/categories/tutorials/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/categories/tutorials/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmings :: Arrr, my Website</title>
+    <link>http://localhost:1313/fr/programming/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/fr/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>快速打开命令行工具</title>
+      <link>http://localhost:1313/fr/programming/win10/%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/programming/win10/%E5%BF%AB%E9%80%9F%E6%89%93%E5%BC%80%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/index.html</guid>
+      <description>2025-01-13 16:14:59&#xA;在 Windows 操作系统中，最常见的打开方式是 Win+R，输入 CMD 来启动命令提示符，命令行的默认工作目录为C:\Users\Administrator&gt;。&#xA;PowerShell打开方式是 Win+X 快捷键打开快捷菜单，选择 PowerShell 来启动 Windows PowerShell，默认目录同样为C:\Users\Administrator&gt;。&#xA;但当想直接在当前文件夹打开命令行，可以有以下两种快捷方式：&#xA;在文件资源管理器的地址栏中直接输入 cmd 或 powershell，然后回车，可在当前目录下打开相应的命令行工具； Shift+右键点击空白区域，选择 “在此处打开命令窗口” 或 “在此处打开 PowerShell 窗口”</description>
+    </item>
+  </channel>
+</rss>

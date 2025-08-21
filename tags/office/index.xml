@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office :: Tag</title>
+    <link>https://NancyBlack.github.io/tags/office/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/tags/office/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Word</title>
+      <link>https://NancyBlack.github.io/programming/office/word/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/office/word/index.html</guid>
+      <description>看标题</description>
+    </item>
+    <item>
+      <title>Excel</title>
+      <link>https://NancyBlack.github.io/programming/office/excel/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/office/excel/index.html</guid>
+      <description>看标题啊</description>
+    </item>
+    <item>
+      <title>PPT</title>
+      <link>https://NancyBlack.github.io/programming/office/ppt/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/office/ppt/index.html</guid>
+      <description>真不看标题啊</description>
+    </item>
+    <item>
+      <title>Office</title>
+      <link>https://NancyBlack.github.io/programming/office/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/office/index.html</guid>
+      <description>三件套走一个</description>
+    </item>
+  </channel>
+</rss>
