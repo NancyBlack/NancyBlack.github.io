@@ -1,0 +1,181 @@
+theme = 'hugo-theme-relearn'
+baseURL = 'https://NancyBlack.github.io/'
+languageCode = 'en-us'
+# header in the upper left corner 
+title = 'FEIKUNs Note' 
+
+[outputs]
+  # add `print` to home, section and page to activate the feature to print whole chapters
+  home = ['html', 'rss', 'print']
+  section = ['html', 'rss', 'print']
+  page = ['html', 'rss', 'print']
+
+[markup]
+  [markup.highlight]
+    lineNumbersInTable = false
+    noClasses = false
+  [markup.goldmark]
+    duplicateResourceFiles = true
+    renderer.unsafe = true
+        
+  [markup.goldmark.extensions]
+    strikethrough = true
+     math = true
+
+    # use Markdown extensions for this showcase
+    [markup.goldmark.extensions.extras]
+      [markup.goldmark.extensions.extras.delete]
+        enable = true
+      [markup.goldmark.extensions.extras.insert]
+        enable = true
+      [markup.goldmark.extensions.extras.mark]
+        enable = true
+      [markup.goldmark.extensions.extras.subscript]
+        enable = true
+      [markup.goldmark.extensions.extras.superscript]
+        enable = true
+
+
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
+
+[languages]
+    [languages.en]
+    title = '' # 这个会在标签页上显示
+    weight = 1
+    languageCode = 'en'
+    languageName = 'English'
+    [languages.en.params]
+      landingPageName = '<i class="fa-fw fas fa-home"></i> Home'
+      
+	  [[languages.en.menu.shortcuts]]
+	    pre = '<i class="fa-fw fab fa-github"></i> '
+	    name = 'GitHub Repo'
+	    url = 'https://github.com/NancyBlack'
+	    weight = 30
+
+	  [[languages.en.menu.shortcuts]]
+	    pre = '<i class="fa-fw fas fa-tags"></i> '
+	    name = 'Tags'
+	    pageRef = '/tags'
+	    weight = 10
+
+	  [[languages.en.menu.shortcuts]]
+	    pre = '<i class="fa-fw fas fa-layer-group"></i> '
+	    name = 'Categories'
+	    pageRef = '/categories'
+	    weight = 20
+
+  [languages.zh-CN]
+    languageCode = 'zh-CN'
+    languageName = 'Pirrratish'
+    title = 'Arrr, my Website'
+    weight = 2
+    
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  
+[params]
+  alwaysopen = ''
+  breadcrumbSeparator = '>'
+  collapsibleMenu = true
+  customMermaidURL = ''
+  customOpenapiURL = ''
+  disableAnchorCopy = false
+  disableAnchorScrolling = false
+  disableAssetsBusting = false
+  disableBreadcrumb = false
+  disableDefaultRelref = false
+  disableExplicitIndexURLs = false
+  disableGeneratorVersion = false
+  disableHoverBlockCopyToClipBoard = false
+  disableInlineCopyToClipBoard = true
+  disableLandingPageButton = false
+  disableLanguageSwitchingButton = false
+  disableNextPrev = false
+  disableRandomIds = false
+  disableRootBreadcrumb = true
+  disableSearchHiddenPages = false
+  disableSeoHiddenPages = true
+  disableShortcutsTitle = false
+  disableTagHiddenPages = false
+  disableTermBreadcrumbs = false
+  disableToc = false
+  highlightWrap = true
+  images = ['images/logo.png']
+  linkTitle = 'Feikun'
+  math = true
+  themeVariant = [
+	  { identifier = 'relearn-auto',  name = 'Relearn Light/Dark', auto = [] },
+	  { identifier = 'relearn-light'  },
+	  { identifier = 'relearn-dark'   },
+	  { identifier = 'relearn-bright' },
+	  { identifier = 'zen-auto',      name = 'Zen Light/Dark', auto = [ 'zen-light', 'zen-dark' ] },
+	  { identifier = 'zen-light'      },
+	  { identifier = 'zen-dark'       },
+	  { identifier = 'retro-auto',    name = 'Retro Learn/Neon', auto = [ 'learn', 'neon' ] },
+	  { identifier = 'neon'           },
+	  { identifier = 'learn'          }
+  ]
+  mathJaxInitialize = '{}'
+  #customMathJaxURL = 'https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js'
+  customMathJaxURL = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  mermaidInitialize = '{ "securityLevel": "loose" }'
+  mermaidZoom = true
+  minify = ''
+  ordersectionsby = 'weight'
+  showVisitedLinks = true
+  titleSeparator = '::'
+  version = "0.1.1"
+
+[params.search]
+  disable = false           
+  index.disable = false    
+  page.disable = false      
+  page.URL = "search"       
+  index.URL = "searchindex.js"  
+  [params.search.adapter.params]
+        additionalContentLanguage = ['zh']
+  
+  [params.author]
+    name = 'Fei kun'
+
+  [[params.boxStyle]]
+    color = 'gold'
+    i18n = ''
+    icon = 'rainbow'
+    identifier = 'magic'
+    title = 'Magic'
+
+  [params.image]
+    errorlevel = 'error'
+
+  [params.imageEffects]
+    border = true
+    lazy = true
+    lightbox = true
+    shadow = false
+
+  [params.include]
+    errorlevel = 'error'
+
+  [params.link]
+    errorlevel = 'error'
+
+    [[params.sidebarmenus]]
+    disableTitle = false 
+    identifier = 'home'
+    main = true
+    pageRef = ''
+    type = 'page'
+
+    [[params.sidebarmenus]]
+      disableTitle = false
+      identifier = 'shortcuts'
+      main = false
+      type = 'menu'
