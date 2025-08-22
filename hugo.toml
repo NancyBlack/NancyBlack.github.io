@@ -131,7 +131,7 @@ title = 'FEIKUNs Note'
   ordersectionsby = 'weight'
   showVisitedLinks = true
   titleSeparator = '::'
-  version = "0.1.1"
+  version = "0.2.0"
 
 [params.search]
   disable = false           
