@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>电池容量</title>
+    <link>https://NancyBlack.github.io/technology/battery/batcap/index.html</link>
+    <description>2025-12-24 22:17:50&#xA;库仑(Coulomb) 定义 库仑（符号：C）是国际单位制(SI)中电量的基本单位，定义为：1安培电流在1秒内所传输的电量。&#xA;物理意义 库仑是电量的度量单位，表示电荷的多少。在电磁学中，电量是基本物理量之一，描述了物体所带电荷的数量。&#xA;数学表达式 \[&#xD;Q = I \times t&#xD;\]其中：&#xA;\(Q\) 表示电量，单位为库仑(C)&#xA;\(I\) 表示电流，单位为安培(A)&#xA;\(t\) 表示时间，单位为秒(s)&#xA;数值转换示例 \[&#xD;Q = 10\,A \times 5\,s = 50\,C&#xD;\]安时(Ampere-hour) 定义 安时（符号：Ah）是工程上常用的电量单位，表示1安培电流在1小时内所传输的电量。它是库仑的倍数单位，主要用于电池容量的计量。&#xA;物理意义 安时将电流和时间结合起来，表示在一定时间内可以提供的恒定电流大小。在电池技术中，安时是衡量电池储存电荷能力的重要指标。&#xA;数学表达式 \[&#xD;Q = I \times t&#xD;\]其中：&#xA;\(Q\) 表示电量，单位为安时(Ah)&#xA;\(I\) 表示电流，单位为安培(A)&#xA;\(t\) 表示时间，单位为小时(h)&#xA;数值转换示例 \[&#xD;Q = 5\,A \times 2\,h = 10\,Ah&#xD;\]千瓦时(Kilowatt-hour) 定义 千瓦时（符号：kWh）是能量单位，表示功率为1千瓦的电器在1小时内所消耗的能量。在中国，千瓦时也被称为&#34;度&#34;，是电力公司计费的基本单位。&#xA;物理意义 千瓦时将功率和时间结合起来，表示在一定时间内消耗或产生的总能量。它是衡量电能消耗的标准单位。&#xA;数学表达式 \[&#xD;E = P \times t = V \times I \times t&#xD;\]其中：</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://NancyBlack.github.io/technology/battery/batcap/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
