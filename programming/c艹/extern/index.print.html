@@ -5,26 +5,26 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.140.0">
     <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
-    <meta name="description" content="文明你我他">
+    <meta name="description" content="extern">
     <meta name="author" content="Fei kun">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://NancyBlack.github.io/images/logo.png">
-    <meta name="twitter:title" content="C&#43;&#43;">
-    <meta name="twitter:description" content="文明你我他">
-    <meta property="og:url" content="https://NancyBlack.github.io/programming/c%E8%89%B9/index.html">
-    <meta property="og:title" content="C&#43;&#43;">
-    <meta property="og:description" content="文明你我他">
+    <meta name="twitter:title" content="C&#43;&#43;与C中extern的异同">
+    <meta name="twitter:description" content="extern">
+    <meta property="og:url" content="https://NancyBlack.github.io/programming/c%E8%89%B9/extern/index.html">
+    <meta property="og:title" content="C&#43;&#43;与C中extern的异同">
+    <meta property="og:description" content="extern">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://NancyBlack.github.io/images/logo.png">
-    <meta itemprop="name" content="C&#43;&#43;">
-    <meta itemprop="description" content="文明你我他">
-    <meta itemprop="wordCount" content="4">
+    <meta itemprop="name" content="C&#43;&#43;与C中extern的异同">
+    <meta itemprop="description" content="extern">
+    <meta itemprop="wordCount" content="225">
     <meta itemprop="image" content="https://NancyBlack.github.io/images/logo.png">
-    <meta itemprop="keywords" content="C&#43;&#43;,VS">
-  <title>C&#43;&#43;</title>
-  <link href="https://NancyBlack.github.io/programming/c%E8%89%B9/index.html" rel="canonical" type="text/html" title="C++">
-  <link href="/programming/c%E8%89%B9/index.xml" rel="alternate" type="application/rss+xml" title="C++">
+    <meta itemprop="keywords" content="C&#43;&#43;,C">
+  <title>C&#43;&#43;与C中extern的异同</title>
+  <link href="https://NancyBlack.github.io/programming/c%E8%89%B9/extern/index.html" rel="canonical" type="text/html" title="C++与C中extern的异同">
+  <link href="/programming/c%E8%89%B9/extern/index.xml" rel="alternate" type="application/rss+xml" title="C++与C中extern的异同">
     <link href="/images/favicon.svg?1781978981" rel="icon" type="image/svg+xml">
     <link href="/css/auto-complete/auto-complete.min.css?1781978981" rel="stylesheet">
     <script src="/js/auto-complete/auto-complete.min.js?1781978981" defer></script>
@@ -51,9 +51,9 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/programming\/c%E8%89%B9\/index.html';
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..';
+      window.relearn.path='\/programming\/c%E8%89%B9\/extern\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/NancyBlack.github.io';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
@@ -101,7 +101,7 @@
       window.relearn.markVariant();
     </script>
 </head>
-  <body class="mobile-support print" data-url="/programming/c%E8%89%B9/index.html">
+  <body class="mobile-support print" data-url="/programming/c%E8%89%B9/extern/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -112,19 +112,42 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#共同点">共同点</a>
+      <ul>
+        <li><a href="#声明与定义分离">声明与定义分离</a></li>
+        <li><a href="#函数默认-extern">函数默认 <code>extern</code></a></li>
+        <li><a href="#块作用域引用">块作用域引用</a></li>
+        <li><a href="#允许多次声明">允许多次声明</a></li>
+      </ul>
+    </li>
+    <li><a href="#核心差异">核心差异</a>
+      <ul>
+        <li><a href="#语言链接规范extern-c">语言链接规范（extern &quot;C&quot;）</a></li>
+        <li><a href="#const-全局变量的默认链接属性">const 全局变量的默认链接属性</a></li>
+        <li><a href="#暂定定义与-odr">暂定定义与 ODR</a></li>
+        <li><a href="#模板显式实例化声明c-独有">模板显式实例化声明（C++ 独有）</a></li>
+        <li><a href="#inline-函数与-extern">inline 函数与 extern</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
+    <li><a href="#实践准则">实践准则</a></li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/index.html"><span itemprop="name">Feikun&#39;s note</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/programming/index.html"><span itemprop="name">Programming</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">C&#43;&#43;</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/index.html"><span itemprop="name">Feikun&#39;s note</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/programming/index.html"><span itemprop="name">Programming</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/programming/c%E8%89%B9/index.html"><span itemprop="name">C&#43;&#43;</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">C&#43;&#43;与C中extern的异同</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c%E8%89%B9/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c%E8%89%B9/extern/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/index.html" title="Programming (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c%E8%89%B9/index.html" title="C++ (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c%E8%89%B9/extern/index.html" title="C++与C中extern的异同 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c/index.html" title="C (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -140,38 +163,6 @@
       <div id="R-main-overlay"></div>
       <main id="R-body-inner" class="highlightable programming" tabindex="-1">
         <div class="flex-block-wrapper">
-<article class="default">
-  <header class="headline">
-<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <ul>
-    <li><a class="term-link" href="/tags/c&amp;#43;&amp;#43;/index.html">C&#43;&#43;</a></li>
-    <li><a class="term-link" href="/tags/vs/index.html">VS</a></li>
-  </ul>
-</div>
-  </header>
-
-<h1 id="c">C&#43;&#43;</h1>
-
-<p align="right">2024-12-26   20:13:11</p>
-<p>别说我不文明啊hugo的网址有符号会自己产生bug，他识别的居然不是字符串就神奇以后有机会的话研究研究</p>
-<div class="children children-h2 children-sort-">
-  <h2 class="children-title" id="c与c中extern的异同"><a href="/programming/c%E8%89%B9/extern/index.html">C&#43;&#43;与C中extern的异同</a></h2><p>extern</p>
-</div>
-
-
-  <footer class="footline">
-<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
-  <i class="fa-fw fas fa-layer-group"></i>
-  <ul>
-    <li><a class="term-link" href="/categories/programming/index.html">Programming</a></li>
-  </ul>
-</div>
-
-
-  </footer>
-</article>
-          <section>
-            <h1 class="a11y-only">Subsections of C++</h1>
 <article class="default">
   <header class="headline">
 <div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
@@ -334,7 +325,6 @@
 
   </footer>
 </article>
-          </section>
         </div>
       </main>
     </div>

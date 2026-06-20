@@ -14,5 +14,12 @@
       <guid>https://NancyBlack.github.io/programming/c%E8%89%B9/index.html</guid>
       <description>文明你我他</description>
     </item>
+    <item>
+      <title>C&#43;&#43;与C中extern的异同</title>
+      <link>https://NancyBlack.github.io/programming/c%E8%89%B9/extern/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://NancyBlack.github.io/programming/c%E8%89%B9/extern/index.html</guid>
+      <description>extern</description>
+    </item>
   </channel>
 </rss>

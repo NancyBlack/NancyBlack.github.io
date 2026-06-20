@@ -5,26 +5,26 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.140.0">
     <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
-    <meta name="description" content="八卦谁不爱呢">
+    <meta name="description" content="extern">
     <meta name="author" content="Fei kun">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://NancyBlack.github.io/images/logo.png">
-    <meta name="twitter:title" content="History">
-    <meta name="twitter:description" content="八卦谁不爱呢">
-    <meta property="og:url" content="https://NancyBlack.github.io/math/history/index.html">
-    <meta property="og:title" content="History">
-    <meta property="og:description" content="八卦谁不爱呢">
+    <meta name="twitter:title" content="C&#43;&#43;与C中extern的异同">
+    <meta name="twitter:description" content="extern">
+    <meta property="og:url" content="https://NancyBlack.github.io/programming/c%E8%89%B9/extern/index.html">
+    <meta property="og:title" content="C&#43;&#43;与C中extern的异同">
+    <meta property="og:description" content="extern">
     <meta property="og:locale" content="en">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://NancyBlack.github.io/images/logo.png">
-    <meta itemprop="name" content="History">
-    <meta itemprop="description" content="八卦谁不爱呢">
-    <meta itemprop="wordCount" content="3">
+    <meta itemprop="name" content="C&#43;&#43;与C中extern的异同">
+    <meta itemprop="description" content="extern">
+    <meta itemprop="wordCount" content="225">
     <meta itemprop="image" content="https://NancyBlack.github.io/images/logo.png">
-    <meta itemprop="keywords" content="Math">
-  <title>History</title>
-  <link href="/math/history/index.xml" rel="alternate" type="application/rss+xml" title="History">
-  <link href="/math/history/index.print.html" rel="alternate" type="text/html" title="History">
+    <meta itemprop="keywords" content="C&#43;&#43;,C">
+  <title>C&#43;&#43;与C中extern的异同</title>
+  <link href="/programming/c%E8%89%B9/extern/index.xml" rel="alternate" type="application/rss+xml" title="C++与C中extern的异同">
+  <link href="/programming/c%E8%89%B9/extern/index.print.html" rel="alternate" type="text/html" title="C++与C中extern的异同">
     <link href="/images/favicon.svg?1781978981" rel="icon" type="image/svg+xml">
     <link href="/css/auto-complete/auto-complete.min.css?1781978981" rel="stylesheet">
     <script src="/js/auto-complete/auto-complete.min.js?1781978981" defer></script>
@@ -51,9 +51,9 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = `.min`;
-      window.relearn.path='\/math\/history\/index.html';
-      window.relearn.relBasePath='..\/..';
-      window.relearn.relBaseUri='..\/..';
+      window.relearn.path='\/programming\/c%E8%89%B9\/extern\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
       window.relearn.absBaseUri='https:\/\/NancyBlack.github.io';
       window.relearn.disableAnchorCopy=false;
       window.relearn.disableAnchorScrolling=false;
@@ -101,7 +101,7 @@
       window.relearn.markVariant();
     </script>
 </head>
-  <body class="mobile-support html" data-url="/math/history/index.html">
+  <body class="mobile-support html" data-url="/programming/c%E8%89%B9/extern/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -112,19 +112,42 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#共同点">共同点</a>
+      <ul>
+        <li><a href="#声明与定义分离">声明与定义分离</a></li>
+        <li><a href="#函数默认-extern">函数默认 <code>extern</code></a></li>
+        <li><a href="#块作用域引用">块作用域引用</a></li>
+        <li><a href="#允许多次声明">允许多次声明</a></li>
+      </ul>
+    </li>
+    <li><a href="#核心差异">核心差异</a>
+      <ul>
+        <li><a href="#语言链接规范extern-c">语言链接规范（extern &quot;C&quot;）</a></li>
+        <li><a href="#const-全局变量的默认链接属性">const 全局变量的默认链接属性</a></li>
+        <li><a href="#暂定定义与-odr">暂定定义与 ODR</a></li>
+        <li><a href="#模板显式实例化声明c-独有">模板显式实例化声明（C++ 独有）</a></li>
+        <li><a href="#inline-函数与-extern">inline 函数与 extern</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结</a></li>
+    <li><a href="#实践准则">实践准则</a></li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
-          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/index.html"><span itemprop="name">Feikun&#39;s note</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/math/index.html"><span itemprop="name">Math</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">History</span><meta itemprop="position" content="3"></li>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class="a11y-only"><a itemprop="item" href="/index.html"><span itemprop="name">Feikun&#39;s note</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/programming/index.html"><span itemprop="name">Programming</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/programming/c%E8%89%B9/index.html"><span itemprop="name">C&#43;&#43;</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">C&#43;&#43;与C中extern的异同</span><meta itemprop="position" content="4"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math/history/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c%E8%89%B9/extern/index.print.html" title="Print whole chapter (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/math/techniques/index.html" title="Techniques (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c%E8%89%B9/index.html" title="C++ (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/science/index.html" title="Science (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/programming/c/index.html" title="C (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -138,29 +161,164 @@
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable math" tabindex="-1">
+      <main id="R-body-inner" class="highlightable programming" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
 <div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
   <ul>
-    <li><a class="term-link" href="/tags/math/index.html">Math</a></li>
+    <li><a class="term-link" href="/tags/c/index.html">C</a></li>
+    <li><a class="term-link" href="/tags/c&amp;#43;&amp;#43;/index.html">C&#43;&#43;</a></li>
   </ul>
 </div>
   </header>
 
-<h1 id="history">History</h1>
+<h1 id="c与c中extern的异同">C&#43;&#43;与C中extern的异同</h1>
 
-<p align="right">2024-12-26   20:44:04</p>
-<p>有时间一定看！</p>
+<p align="right">2026-06-21   01:50:12</p>
+<p><code>extern</code> 关键字在 C 和 C++ 中的根本使命一致：声明一个具有外部链接的变量或函数，指出&quot;此符号定义在别处&quot;。</p>
+<h2 id="共同点">共同点</h2>
+<h3 id="声明与定义分离">声明与定义分离</h3>
+<p><code>extern int x;</code> 仅是声明，不分配存储；若带初始化（如 <code>extern int x = 1;</code>）则为定义。</p>
+<h3 id="函数默认-extern">函数默认 <code>extern</code></h3>
+<p><code>extern void f();</code> 与 <code>void f();</code> 等效。</p>
+<h3 id="块作用域引用">块作用域引用</h3>
+<p>函数内可用 <code>extern</code> 声明引入全局变量。</p>
+<h3 id="允许多次声明">允许多次声明</h3>
+<p>同一变量可有多个 <code>extern</code> 声明，只要类型一致且无多重定义。</p>
+<h2 id="核心差异">核心差异</h2>
+<h3 id="语言链接规范extern-c">语言链接规范（extern &quot;C&quot;）</h3>
+<ul>
+<li>
+<p>C++：可用 <code>extern &quot;C&quot;</code> 指定 C 链接规则（无名字修饰），实现 C/C++ 互调。</p>
+</li>
+<li>
+<p>C：无此概念。</p>
+</li>
+</ul>
+<!-- -->
+<pre><code>    extern &quot;C&quot; {
+        void c_func(int);
+        int  c_var;
+    }
+</code></pre>
+<h3 id="const-全局变量的默认链接属性">const 全局变量的默认链接属性</h3>
+<ul>
+<li>
+<p>C：文件作用域 <code>const</code> 变量默认外部链接。</p>
+</li>
+<li>
+<p>C++：文件作用域 <code>const</code> 变量默认内部链接（如同 <code>static</code>）。跨文件共享必须显式加 <code>extern</code> 定义。</p>
+</li>
+</ul>
+<p>C 示例：</p>
+<pre><code>    /* file1.c */
+    const int N = 100;   /* 外部链接 */
+    
+    /* file2.c */
+    extern const int N;  /* 正确 */
+</code></pre>
+<p>C++ 示例：</p>
+<pre><code>    // file1.cpp
+    extern const int N = 100; // 外部链接
+    
+    // file2.cpp
+    extern const int N;       // 引用
+</code></pre>
+<h3 id="暂定定义与-odr">暂定定义与 ODR</h3>
+<ul>
+<li>
+<p>C：文件作用域无初始化、无 <code>extern</code> 的声明是&quot;暂定定义&quot;。允许重复，最终合并为一个（初值0）。</p>
+</li>
+<li>
+<p>C++：严格执行一次定义规则（ODR），所有不带 <code>extern</code> 的变量声明即定义，重复则错误。跨文件共享必须在一个文件定义，其他文件用 <code>extern</code> 声明。</p>
+</li>
+</ul>
+<p>C 示例：</p>
+<pre><code>    int a;   // 暂定定义
+    int a;   // 合法
+</code></pre>
+<h3 id="模板显式实例化声明c-独有">模板显式实例化声明（C++ 独有）</h3>
+<p>C++11 引入 <code>extern template</code>，用于抑制隐式实例化，C 无此用法。</p>
+<pre><code>    extern template class std::vector&lt;int&gt;;
+</code></pre>
+<h3 id="inline-函数与-extern">inline 函数与 extern</h3>
+<ul>
+<li>
+<p>C99：<code>inline</code> 函数默认不提供外部可链接定义。如需外部符号，用 <code>extern inline</code> 声明或另提供外部定义。</p>
+</li>
+<li>
+<p>C++：<code>inline</code> 函数默认具有外部链接，所有相同定义合并为一份，无需 <code>extern</code>。</p>
+</li>
+</ul>
+<p>C99 示例：</p>
+<pre><code>    inline void f(void) { /* 仅内联 */ }
+    extern inline void f(void); // 请求外部符号
+</code></pre>
+<h2 id="总结">总结</h2>
+<table>
+  <thead>
+      <tr>
+          <th>特性</th>
+          <th>C</th>
+          <th>C++</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>基本语义</td>
+          <td>声明外部链接符号</td>
+          <td>同 C</td>
+      </tr>
+      <tr>
+          <td><code>extern &quot;C&quot;</code></td>
+          <td>不支持</td>
+          <td>支持</td>
+      </tr>
+      <tr>
+          <td><code>const</code> 全局默认链接</td>
+          <td>外部链接</td>
+          <td>内部链接，共享需 <code>extern const</code> 定义</td>
+      </tr>
+      <tr>
+          <td>暂定定义</td>
+          <td>允许</td>
+          <td>禁止（严格 ODR）</td>
+      </tr>
+      <tr>
+          <td><code>extern template</code></td>
+          <td>无</td>
+          <td>有</td>
+      </tr>
+      <tr>
+          <td><code>inline</code> 外部可见性</td>
+          <td>默认不可见，需 <code>extern inline</code></td>
+          <td>默认可见</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="实践准则" class="unnumbered">实践准则</h2>
+<ul>
+<li>
+<p>头文件中 <code>extern</code> 声明变量，单源文件中定义。</p>
+</li>
+<li>
+<p>C++ 跨文件共享 <code>const</code> 常量：<code>extern const int x = ...;</code>。</p>
+</li>
+<li>
+<p>混合编程时，C++ 方用 <code>extern &quot;C&quot;</code> 包裹 C 函数声明。</p>
+</li>
+<li>
+<p>避免依赖默认链接属性或暂定定义，显式标注 <code>extern</code> 或 <code>static</code>。</p>
+</li>
+</ul>
 
 
   <footer class="footline">
 <div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
   <i class="fa-fw fas fa-layer-group"></i>
   <ul>
-    <li><a class="term-link" href="/categories/history/index.html">History</a></li>
-    <li><a class="term-link" href="/categories/math/index.html">Math</a></li>
+    <li><a class="term-link" href="/categories/programming/index.html">Programming</a></li>
   </ul>
 </div>
 
@@ -269,9 +427,9 @@
             <li class="" data-nav-id="/technology/stm32h7/index.html"><input type="checkbox" id="R-section-55b472615f825060f6fae43574c3d9d7" aria-controls="R-subsections-55b472615f825060f6fae43574c3d9d7"><label for="R-section-55b472615f825060f6fae43574c3d9d7"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu STM32H7</span></label><a class="padding" href="/technology/stm32h7/index.html">STM32H7<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-55b472615f825060f6fae43574c3d9d7" class="collapsible-menu">
             <li class="" data-nav-id="/technology/stm32h7/bug/index.html"><a class="padding" href="/technology/stm32h7/bug/index.html">BUG<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/technology/stm32h7/gpio/index.html"><a class="padding" href="/technology/stm32h7/gpio/index.html">GPIO<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-            <li class="" data-nav-id="/programming/index.html"><input type="checkbox" id="R-section-e3fc01b477dbaf64a8f5013a3dab5c5b" aria-controls="R-subsections-e3fc01b477dbaf64a8f5013a3dab5c5b"><label for="R-section-e3fc01b477dbaf64a8f5013a3dab5c5b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Programming</span></label><a class="padding" href="/programming/index.html">Programming<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e3fc01b477dbaf64a8f5013a3dab5c5b" class="collapsible-menu">
-            <li class="" data-nav-id="/programming/c%E8%89%B9/index.html"><input type="checkbox" id="R-section-1df3eb0a55f1164814567cb86c838303" aria-controls="R-subsections-1df3eb0a55f1164814567cb86c838303"><label for="R-section-1df3eb0a55f1164814567cb86c838303"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu C&#43;&#43;</span></label><a class="padding" href="/programming/c%E8%89%B9/index.html">C&#43;&#43;<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-1df3eb0a55f1164814567cb86c838303" class="collapsible-menu">
-            <li class="" data-nav-id="/programming/c%E8%89%B9/extern/index.html"><a class="padding" href="/programming/c%E8%89%B9/extern/index.html">C&#43;&#43;与C中extern的异同<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="parent " data-nav-id="/programming/index.html"><input type="checkbox" id="R-section-e3fc01b477dbaf64a8f5013a3dab5c5b" aria-controls="R-subsections-e3fc01b477dbaf64a8f5013a3dab5c5b" checked><label for="R-section-e3fc01b477dbaf64a8f5013a3dab5c5b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Programming</span></label><a class="padding" href="/programming/index.html">Programming<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-e3fc01b477dbaf64a8f5013a3dab5c5b" class="collapsible-menu">
+            <li class="parent " data-nav-id="/programming/c%E8%89%B9/index.html"><input type="checkbox" id="R-section-1df3eb0a55f1164814567cb86c838303" aria-controls="R-subsections-1df3eb0a55f1164814567cb86c838303" checked><label for="R-section-1df3eb0a55f1164814567cb86c838303"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu C&#43;&#43;</span></label><a class="padding" href="/programming/c%E8%89%B9/index.html">C&#43;&#43;<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-1df3eb0a55f1164814567cb86c838303" class="collapsible-menu">
+            <li class="active " data-nav-id="/programming/c%E8%89%B9/extern/index.html"><a class="padding" href="/programming/c%E8%89%B9/extern/index.html">C&#43;&#43;与C中extern的异同<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/programming/c/index.html"><a class="padding" href="/programming/c/index.html">C<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/programming/matlabsimulink/index.html"><a class="padding" href="/programming/matlabsimulink/index.html">Matlab/Simulink<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/programming/win10/index.html"><input type="checkbox" id="R-section-72e0450faf545e047d4b058fe62874cc" aria-controls="R-subsections-72e0450faf545e047d4b058fe62874cc"><label for="R-section-72e0450faf545e047d4b058fe62874cc"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Win10</span></label><a class="padding" href="/programming/win10/index.html">Win10<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-72e0450faf545e047d4b058fe62874cc" class="collapsible-menu">
@@ -287,10 +445,10 @@
             <li class="" data-nav-id="/programming/office/word/index.html"><a class="padding" href="/programming/office/word/index.html">Word<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/programming/office/excel/index.html"><a class="padding" href="/programming/office/excel/index.html">Excel<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/programming/office/ppt/index.html"><a class="padding" href="/programming/office/ppt/index.html">PPT<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li></ul></li>
-            <li class="parent " data-nav-id="/math/index.html"><input type="checkbox" id="R-section-833ca246cca04fd0b216c9c31c31cc5b" aria-controls="R-subsections-833ca246cca04fd0b216c9c31c31cc5b" checked><label for="R-section-833ca246cca04fd0b216c9c31c31cc5b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math</span></label><a class="padding" href="/math/index.html">Math<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-833ca246cca04fd0b216c9c31c31cc5b" class="collapsible-menu">
+            <li class="" data-nav-id="/math/index.html"><input type="checkbox" id="R-section-833ca246cca04fd0b216c9c31c31cc5b" aria-controls="R-subsections-833ca246cca04fd0b216c9c31c31cc5b"><label for="R-section-833ca246cca04fd0b216c9c31c31cc5b"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Math</span></label><a class="padding" href="/math/index.html">Math<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-833ca246cca04fd0b216c9c31c31cc5b" class="collapsible-menu">
             <li class="" data-nav-id="/math/axiom/index.html"><a class="padding" href="/math/axiom/index.html">Axiom<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/math/techniques/index.html"><a class="padding" href="/math/techniques/index.html">Techniques<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="active " data-nav-id="/math/history/index.html"><a class="padding" href="/math/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="" data-nav-id="/math/history/index.html"><a class="padding" href="/math/history/index.html">History<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
             <li class="" data-nav-id="/science/index.html"><a class="padding" href="/science/index.html">Science<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/life/index.html"><input type="checkbox" id="R-section-a26573220d20dd05d4a283582117eae3" aria-controls="R-subsections-a26573220d20dd05d4a283582117eae3"><label for="R-section-a26573220d20dd05d4a283582117eae3"><i class="fa-fw fas fa-chevron-right"></i><span class="a11y-only">Submenu Life</span></label><a class="padding" href="/life/index.html">Life<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-a26573220d20dd05d4a283582117eae3" class="collapsible-menu">
             <li class="" data-nav-id="/life/food/index.html"><a class="padding" href="/life/food/index.html">Food<i class="fa-fw fas fa-check read-icon"></i></a></li>
@@ -323,7 +481,7 @@
                 <div class="control-style">
                   <label class="a11y-only" for="R-select-language">Language</label>
                   <select id="R-select-language">
-                    <option id="R-select-language-en" value="en" data-url="/math/history/index.html" lang="en" selected data-selected>English</option>
+                    <option id="R-select-language-en" value="en" data-url="/programming/c%E8%89%B9/extern/index.html" lang="en" selected data-selected>English</option>
                   </select>
                 </div>
                 <div class="clear"></div>

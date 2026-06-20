@@ -28,28 +28,28 @@
   <link href="https://NancyBlack.github.io/zh-cn/programming/index.html" rel="alternate" hreflang="zh-CN">
   <link href="https://NancyBlack.github.io/programming/index.html" rel="canonical" type="text/html" title="Programming">
   <link href="/programming/index.xml" rel="alternate" type="application/rss+xml" title="Programming">
-    <link href="/images/favicon.svg?1766586396" rel="icon" type="image/svg+xml">
-    <link href="/css/auto-complete/auto-complete.min.css?1766586396" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1766586396" defer></script>
-    <script src="/js/search-lunr.min.js?1766586396" defer></script>
-    <script src="/js/search.min.js?1766586396" defer></script>
+    <link href="/images/favicon.svg?1781978981" rel="icon" type="image/svg+xml">
+    <link href="/css/auto-complete/auto-complete.min.css?1781978981" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1781978981" defer></script>
+    <script src="/js/search-lunr.min.js?1781978981" defer></script>
+    <script src="/js/search.min.js?1781978981" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1766586396";
+      window.relearn.index_js_url="/searchindex.en.js?1781978981";
     </script>
-    <script src="/js/lunr/lunr.min.js?1766586396" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1766586396" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1766586396" defer></script>
-    <script src="/js/lunr/lunr.zh.min.js?1766586396" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1766586396" defer></script>
+    <script src="/js/lunr/lunr.min.js?1781978981" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1781978981" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1781978981" defer></script>
+    <script src="/js/lunr/lunr.zh.min.js?1781978981" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1781978981" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['zh', 'en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766586396" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1766586396" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1766586396" rel="stylesheet">
-    <link href="/css/theme.min.css?1766586396" rel="stylesheet">
-    <link href="/css/format-print.min.css?1766586396" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1781978981" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1781978981" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1781978981" rel="stylesheet">
+    <link href="/css/theme.min.css?1781978981" rel="stylesheet">
+    <link href="/css/format-print.min.css?1781978981" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -190,6 +190,9 @@
 
 <p align="right">2024-12-26   20:13:11</p>
 <p>别说我不文明啊hugo的网址有符号会自己产生bug，他识别的居然不是字符串就神奇以后有机会的话研究研究</p>
+<div class="children children-h2 children-sort-">
+  <h2 class="children-title" id="c与c中extern的异同"><a href="/programming/c%E8%89%B9/extern/index.html">C&#43;&#43;与C中extern的异同</a></h2><p>extern</p>
+</div>
 
 
   <footer class="footline">
@@ -203,6 +206,171 @@
 
   </footer>
 </article>
+          <section>
+            <h1 class="a11y-only">Subsections of C++</h1>
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <ul>
+    <li><a class="term-link" href="/tags/c/index.html">C</a></li>
+    <li><a class="term-link" href="/tags/c&amp;#43;&amp;#43;/index.html">C&#43;&#43;</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="c与c中extern的异同">C&#43;&#43;与C中extern的异同</h1>
+
+<p align="right">2026-06-21   01:50:12</p>
+<p><code>extern</code> 关键字在 C 和 C++ 中的根本使命一致：声明一个具有外部链接的变量或函数，指出&quot;此符号定义在别处&quot;。</p>
+<h2 id="共同点">共同点</h2>
+<h3 id="声明与定义分离">声明与定义分离</h3>
+<p><code>extern int x;</code> 仅是声明，不分配存储；若带初始化（如 <code>extern int x = 1;</code>）则为定义。</p>
+<h3 id="函数默认-extern">函数默认 <code>extern</code></h3>
+<p><code>extern void f();</code> 与 <code>void f();</code> 等效。</p>
+<h3 id="块作用域引用">块作用域引用</h3>
+<p>函数内可用 <code>extern</code> 声明引入全局变量。</p>
+<h3 id="允许多次声明">允许多次声明</h3>
+<p>同一变量可有多个 <code>extern</code> 声明，只要类型一致且无多重定义。</p>
+<h2 id="核心差异">核心差异</h2>
+<h3 id="语言链接规范extern-c">语言链接规范（extern &quot;C&quot;）</h3>
+<ul>
+<li>
+<p>C++：可用 <code>extern &quot;C&quot;</code> 指定 C 链接规则（无名字修饰），实现 C/C++ 互调。</p>
+</li>
+<li>
+<p>C：无此概念。</p>
+</li>
+</ul>
+<!-- -->
+<pre><code>    extern &quot;C&quot; {
+        void c_func(int);
+        int  c_var;
+    }
+</code></pre>
+<h3 id="const-全局变量的默认链接属性">const 全局变量的默认链接属性</h3>
+<ul>
+<li>
+<p>C：文件作用域 <code>const</code> 变量默认外部链接。</p>
+</li>
+<li>
+<p>C++：文件作用域 <code>const</code> 变量默认内部链接（如同 <code>static</code>）。跨文件共享必须显式加 <code>extern</code> 定义。</p>
+</li>
+</ul>
+<p>C 示例：</p>
+<pre><code>    /* file1.c */
+    const int N = 100;   /* 外部链接 */
+    
+    /* file2.c */
+    extern const int N;  /* 正确 */
+</code></pre>
+<p>C++ 示例：</p>
+<pre><code>    // file1.cpp
+    extern const int N = 100; // 外部链接
+    
+    // file2.cpp
+    extern const int N;       // 引用
+</code></pre>
+<h3 id="暂定定义与-odr">暂定定义与 ODR</h3>
+<ul>
+<li>
+<p>C：文件作用域无初始化、无 <code>extern</code> 的声明是&quot;暂定定义&quot;。允许重复，最终合并为一个（初值0）。</p>
+</li>
+<li>
+<p>C++：严格执行一次定义规则（ODR），所有不带 <code>extern</code> 的变量声明即定义，重复则错误。跨文件共享必须在一个文件定义，其他文件用 <code>extern</code> 声明。</p>
+</li>
+</ul>
+<p>C 示例：</p>
+<pre><code>    int a;   // 暂定定义
+    int a;   // 合法
+</code></pre>
+<h3 id="模板显式实例化声明c-独有">模板显式实例化声明（C++ 独有）</h3>
+<p>C++11 引入 <code>extern template</code>，用于抑制隐式实例化，C 无此用法。</p>
+<pre><code>    extern template class std::vector&lt;int&gt;;
+</code></pre>
+<h3 id="inline-函数与-extern">inline 函数与 extern</h3>
+<ul>
+<li>
+<p>C99：<code>inline</code> 函数默认不提供外部可链接定义。如需外部符号，用 <code>extern inline</code> 声明或另提供外部定义。</p>
+</li>
+<li>
+<p>C++：<code>inline</code> 函数默认具有外部链接，所有相同定义合并为一份，无需 <code>extern</code>。</p>
+</li>
+</ul>
+<p>C99 示例：</p>
+<pre><code>    inline void f(void) { /* 仅内联 */ }
+    extern inline void f(void); // 请求外部符号
+</code></pre>
+<h2 id="总结">总结</h2>
+<table>
+  <thead>
+      <tr>
+          <th>特性</th>
+          <th>C</th>
+          <th>C++</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>基本语义</td>
+          <td>声明外部链接符号</td>
+          <td>同 C</td>
+      </tr>
+      <tr>
+          <td><code>extern &quot;C&quot;</code></td>
+          <td>不支持</td>
+          <td>支持</td>
+      </tr>
+      <tr>
+          <td><code>const</code> 全局默认链接</td>
+          <td>外部链接</td>
+          <td>内部链接，共享需 <code>extern const</code> 定义</td>
+      </tr>
+      <tr>
+          <td>暂定定义</td>
+          <td>允许</td>
+          <td>禁止（严格 ODR）</td>
+      </tr>
+      <tr>
+          <td><code>extern template</code></td>
+          <td>无</td>
+          <td>有</td>
+      </tr>
+      <tr>
+          <td><code>inline</code> 外部可见性</td>
+          <td>默认不可见，需 <code>extern inline</code></td>
+          <td>默认可见</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="实践准则" class="unnumbered">实践准则</h2>
+<ul>
+<li>
+<p>头文件中 <code>extern</code> 声明变量，单源文件中定义。</p>
+</li>
+<li>
+<p>C++ 跨文件共享 <code>const</code> 常量：<code>extern const int x = ...;</code>。</p>
+</li>
+<li>
+<p>混合编程时，C++ 方用 <code>extern &quot;C&quot;</code> 包裹 C 函数声明。</p>
+</li>
+<li>
+<p>避免依赖默认链接属性或暂定定义，显式标注 <code>extern</code> 或 <code>static</code>。</p>
+</li>
+</ul>
+
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/programming/index.html">Programming</a></li>
+  </ul>
+</div>
+
+
+  </footer>
+</article>
+          </section>
 <article class="default">
   <header class="headline">
 <div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
@@ -709,8 +877,8 @@ logUploaderSettings_temp.ini：存储OneDrive的相关配置信息，可删。</
       }, JSON.parse("{}") );
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="/js/clipboard/clipboard.min.js?1766586396" defer></script>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1766586396" defer></script>
-    <script src="/js/theme.min.js?1766586396" defer></script>
+    <script src="/js/clipboard/clipboard.min.js?1781978981" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1781978981" defer></script>
+    <script src="/js/theme.min.js?1781978981" defer></script>
   </body>
 </html>
