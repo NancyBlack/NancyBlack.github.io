@@ -140,7 +140,7 @@ E = 2\,W \times 3\,h = 6\,kWh
 ### 数学推导
 
 \[
-1\,kWh = 1000\,W \times 1\,h = 1000\,VCdotA \times 1\,h = 1000\,VCdotAh
+1\,kWh = 1000\,W \times 1\,h = 1000\,V\cdot A \times 1\,h = 1000\,V\cdot Ah
 \]
 
 因此，**1千瓦时 = 1000伏特·安时**，或者表示为：
